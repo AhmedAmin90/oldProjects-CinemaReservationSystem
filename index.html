@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fas fa-film"></i>
+        <h3>Cinema Logo</h3>
+      </div>
+
+      <div class="header-btn">
+        <ul>
+          <li>Movies</li>
+          <li>Get Photo with Your Hero</li>
+          <li>Offers</li>
+          <li>Coming Soon</li>
+          <li>Top Movies</li>
+          <li>Contact Us</li>
+        </ul>
+        <div class="form-control">
+          <input type="text" placeholder="Search" />
+          <i class="fas fa-search-location"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="line-outside">
+      <button class="btn-back-to-cinema">Back To Cinema</button>
+    </div>
+
+    <div class="container">
+      <div class="movie-details">
+        <div class="movie-description">
+          <img
+            src="./movieimg.jpg"
+            alt="moviename"
+            width="200px"
+            height="300px"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            maxime impedit neque excepturi cupiditate autem eveniet voluptatum
+            unde alias deserunt aut corporis veniam et, ab ea amet aliquid ex
+            similique. Nam totam iste excepturi nisi sunt sed magni harum, ea
+            tempore facere, numquam ipsam necessitatibus, illo repellat. Ratione
+            commodi nam atque error laborum ullam quae. Corrupti deleniti hic
+            provident ullam. Explicabo autem totam, aliquid sequi sit quo vitae
+            ad natus delectus sapiente nisi sunt eius assumenda ex quis
+            voluptates exercitationem sed suscipit atque, tenetur laborum
+            pariatur facere voluptatem labore. Cum. Sunt incidunt facilis
+            aperiam voluptate aspernatur quae tenetur! Reiciendis autem odio
+            perspiciatis inventore, sint aliquam adipisci officia placeat
+            voluptatem asperiores nostrum. Minus mollitia doloremque dicta nisi
+            rerum nihil magni tenetur. Libero, omnis? Nemo impedit, modi iure
+            exercitationem cumque aut? Assumenda, saepe libero excepturi quia
+            perspiciatis incidunt quibusdam, dolor voluptatibus fuga totam iusto
+            vero vel animi eius consectetur modi. Necessitatibus, excepturi.
+          </p>
+        </div>
+        <div class="movie-trailer">
+          <h1>Movie Name: John 3 Wick</h1>
+          <button>Watch Trailer <i class="fas fa-caret-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="booking-details">
+      <div class="form-control">
+        <label for="user-name">Enter your Name</label>
+        <input type="text" name="" id="user-name" placeholder="Name" />
+        <small class="small">error msg</small>
+      </div>
+      <div class="form-control">
+        <label for="booking-date">Choose Movie Date</label>
+        <input
+          type="date"
+          name=""
+          id="booking-date"
+          placeholder="Choose Date"
+          required
+        />
+        <small>error msg</small>
+      </div>
+      <div class="form-control">
+        <label for="booking-time">Choose Movie Time</label>
+        <input
+          type="time"
+          name=""
+          id="booking-time"
+          value="15:00"
+          min="15:00"
+          max="23:00"
+          placeholder="Time"
+          required
+        />
+        <small>error msg</small>
+      </div>
+    </div>
+
+    <div class="contaier">
+      <div class="status">
+        <div class="status-divs">
+          <small>Selected Seat(s)</small>
+          <div class="seats selected-seats-fixed"></div>
+        </div>
+        <div class="status-divs">
+          <small>Available Seat(s)</small>
+          <div class="seats available-seats"></div>
+        </div>
+        <div class="status-divs">
+          <small>Sold Seat(s)</small>
+          <div class="seats sold-seats"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="ticket">
+        <h2>Movie Price 10 $</h2>
+        <h2>Food List</h2>
+        <select name="food" id="food-menu">
+          <option value="0">Select Food</option>
+          <option value="2">Corn 2$</option>
+          <option value="5">Burgur 5$</option>
+          <option value="5">Steak 5$ </option>
+          <option value="10">Family Corn 10$ </option>
+          <option value="2">Cola 2$ </option>
+          <option value="3">Juice 3$</option>
+          <option value="0">Thanks, Prefer no food</option>
+        </select>
+        <input
+          type="number"
+          name=""
+          id="meals-number"
+          min="1"
+          placeholder="Number of Meals"
+        />
+        <button id="add-food"><i class="fas fa-plus"></i>Add Foods</button>
+        <p>Food Price = <span id="food-price">0</span>$</p>
+        <p>Seat(s) Price = <span id="seat-prices">0</span>$</p>
+        <p>Total Price = <span id="total-price">0</span>$</p>
+        <button id="order-btn">Order</button>
+
+        <div class="ticket-check">
+          <h3>Name: <span id="name-span"></span></h3>
+          <h3>Number of Seats: <span id="seat-span"></span></h3>
+          <h3>Total Price: <span id="price-span"></span></h3>
+          <button id="check-out-btn">Check Out</button>
+        </div>
+      </div>
+      <div class="cinema-show">
+        <div class="screen"></div>
+
+        <div class="seats-rows">
+          <div class="left-seats">
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+          </div>
+          <div class="center-rows">
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+          </div>
+          <div class="right-seats">
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+            <div class="row">
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+              <div class="seats"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a4590f3e3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
